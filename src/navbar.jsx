@@ -7,8 +7,16 @@ function NavBar() {
     <div className="NavBar">
       <img className="logo" src={logo} alt="Surreal Estates Logo" />
       <ul className="nav">
-        <li className="item">View Properties</li>
-        <li className="item">Add a Property</li>
+        <li className="item">
+          <button type="button" id="grab" className="button">
+            View Properties
+          </button>
+        </li>
+        <li className="item">
+          <button type="button" className="button" id="grab">
+            Add a Property
+          </button>
+        </li>
       </ul>
     </div>
   );
