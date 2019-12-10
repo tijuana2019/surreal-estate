@@ -1,0 +1,11 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: lightgray;
+}
+
+.NavBar {
+  background-color: white;
+  border-bottom: darkorchid;
+}
