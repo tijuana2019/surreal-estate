@@ -1,5 +1,6 @@
 import React from 'react';
 import './navbar.css';
+import { Route, Link } from 'react-router-dom';
 import logo from './logo.png';
 
 function NavBar() {
@@ -7,16 +8,16 @@ function NavBar() {
     <div className="NavBar">
       <img className="logo" src={logo} alt="Surreal Estates Logo" />
       <ul className="nav">
-        <li className="item">
+        <Link to="/" className="item">
           <button type="button" id="grab" className="button">
             View Properties
           </button>
-        </li>
-        <li className="item">
+        </Link>
+        <Link to="addproperty" className="item">
           <button type="button" className="button" id="grab">
             Add a Property
           </button>
-        </li>
+        </Link>
       </ul>
     </div>
   );
