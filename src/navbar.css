@@ -22,15 +22,14 @@
 }
 
 .button {
-    -webkit-transition-duration: 0.4s; 
-    transition-duration: 0.5s;
-    padding: 10px;
-    color: black;
-    background-color: white;
-    border-radius: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
-  }
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.5s;
+  padding: 10px;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+}
+
 
   .button:hover {
     background-color: purple; 
