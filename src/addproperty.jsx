@@ -31,10 +31,11 @@ class AddProperty extends Component {
   render() {
     return (
       <div className="AddProperty">
-        <form onSubmit={this.handleAddProperty}>
+        <form className="AddProperty" onSubmit={this.handleAddProperty}>
           <label>
             Title:
             <input
+              className="input"
               name="title"
               value={this.state.fields.title}
               onChange={this.handleFieldChange}
@@ -43,7 +44,12 @@ class AddProperty extends Component {
           </label>
           <label>
             Property Type:
-            <select name="type" value={this.state.fields.type} onChange={this.handleFieldChange}>
+            <select
+              className="select"
+              name="type"
+              value={this.state.fields.type}
+              onChange={this.handleFieldChange}
+            >
               <option value="Flat">Flat</option>
               <option value="Detached">Detached</option>
               <option value="Semi-Detached">Semi-Detached</option>
@@ -56,6 +62,7 @@ class AddProperty extends Component {
           <label>
             Number of Bedrooms:
             <input
+              className="input"
               name="bedrooms"
               value={this.state.fields.bedrooms}
               onChange={this.handleFieldChange}
@@ -65,6 +72,7 @@ class AddProperty extends Component {
           <label>
             Number of Bathrooms:
             <input
+              className="input"
               name="bathrooms"
               value={this.state.fields.bathrooms}
               onChange={this.handleFieldChange}
@@ -74,6 +82,7 @@ class AddProperty extends Component {
           <label>
             Price:
             <input
+              className="input"
               name="price"
               value={this.state.fields.price}
               onChange={this.handleFieldChange}
@@ -82,7 +91,12 @@ class AddProperty extends Component {
           </label>
           <label>
             City:
-            <select name="city" value={this.state.fields.city} onChange={this.handleFieldChange}>
+            <select
+              className="select"
+              name="city"
+              value={this.state.fields.city}
+              onChange={this.handleFieldChange}
+            >
               <option value="Manchester">Manchester</option>
               <option value="Leeds">Leeds</option>
               <option value="Sheffield">Sheffield</option>
@@ -92,6 +106,7 @@ class AddProperty extends Component {
           <label>
             Your email:
             <input
+              className="input"
               name="email"
               value={this.state.fields.email}
               onChange={this.handleFieldChange}
@@ -99,7 +114,7 @@ class AddProperty extends Component {
             />
           </label>
 
-          <button type="submit" label="Add">
+          <button className="button" type="submit" label="Add" id="grab">
             Add
           </button>
         </form>
